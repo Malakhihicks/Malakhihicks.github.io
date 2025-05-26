@@ -1,5 +1,5 @@
 # Random Number Guessing Game 
-```mermaid
+```mermaid```
 flowchart TD
   Start([Start]) --> Generate[Generate a random number between 1 and 100]
   Generate --> Prompt[Prompt user to guess the number]
