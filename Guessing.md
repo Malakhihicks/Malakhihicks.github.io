@@ -1,11 +1,11 @@
 # Random Number Guessing Game 
-```mermaid```
+```mermaid
 flowchart TD
   Start([Start]) --> Generate[Generate a random number between 1 and 100]
   Generate --> Prompt[Prompt user to guess the number]
   Prompt --> Input[User inputs a guess]
   Input --> CheckValid{Is the input a valid number?}
-  CheckValid-- Yes -- > Compare{Is guess correct?}
+  CheckValid -- Yes -- > Compare{Is guess correct?}
   CheckValid -- No --> Invalid[Show error: Please enter a number] 
   Invalid --> Prompt
   Compare -- Yes --> Win[Display Right! you guessed the number correctly!]
