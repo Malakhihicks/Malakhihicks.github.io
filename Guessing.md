@@ -9,10 +9,10 @@ flowchart TD
   CheckValid -- Yes --> Compare{Is guess correct?}
   CheckValid -- No --> Invalid[Show error: Please enter a number]
   Invalid --> Prompt
-  Compare -- Yes --> Win[Display Right! you guessed the number correctly!]
-  Compare -- No --> HighLow{Is guess too low or high?}
-  HighLow -- Low --> lowMsg[Display "Too low"]
-  HighLow -- High --> highMsg[Display "Too high"]
+  Compare -- Yes --> Win[Display: You guessed the number correctly!]
+  Compare -- No --> HighLow{Is the guess too low or high?}
+  HighLow -- Low --> lowMsg[Display: Too low]
+  HighLow -- High --> highMsg[Display: Too high]
   lowMsg --> Prompt
   highMsg --> Prompt
   Win --> End([End])
